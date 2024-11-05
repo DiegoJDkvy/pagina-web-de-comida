@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Ventas de Comida</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=Ad117bBNYYdzaaQZE037yK8VXjDISkGjYK0KPxFYWmztMRGF6e1a-TyyxoH93ZPO7YTY7S5o35wXNGCd"></script>
+</head>
+<body>
+    <header>
+        <h1>Comida Rápida - Pedido en Línea</h1>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menú</h2>
+            <div class="food-item">
+                <img src="HC.jpg" alt="Hamburguesa Clásica">
+                <p>Hamburguesa Clásica</p>
+                <p>Precio: $10.00</p>
+                <button onclick="addToCart(10, 'Hamburguesa Clásica')">Agregar al carrito</button>
+            </div>
+            <div class="food-item">
+                <img src="PQ.jpg" alt="Pizza de Queso">
+                <p>Pizza de Queso</p>
+                <p>Precio: $15.00</p>
+                <button onclick="addToCart(15, 'Pizza de Queso')">Agregar al carrito</button>
+            </div>
+            <div class="food-item">
+                <img src="TCS.jpg" alt="Tacos">
+                <p>Tacos</p>
+                <p>Precio: $8.00</p>
+                <button onclick="addToCart(8, 'Tacos')">Agregar al carrito</button>
+            </div>
+            <div class="food-item">
+                <img src="SSH.jpg" alt="Sushi">
+                <p>Sushi</p>
+                <p>Precio: $20.00</p>
+                <button onclick="addToCart(20, 'Sushi')">Agregar al carrito</button>
+            </div>
+            <div class="food-item">
+                <img src="TCS.jpg" alt="Pasta">
+                <p>Pasta</p>
+                <p>Precio: $12.00</p>
+                <button onclick="addToCart(12, 'Pasta')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: $0.00</p>
+            <div id="paypal-button-container"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
